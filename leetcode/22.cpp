@@ -7,10 +7,10 @@ class Solution
 		{
 			if (l == n && r == n)
 				res.push_back(s);
-			if (l > r)
-				dfs(l, r + 1, s + ')', n);
 			if (l < n)
 				dfs(l + 1, r, s + '(', n);
+			if (l > r)
+				dfs(l, r + 1, s + ')', n);
 		}
 		vector<string> generateParenthesis(int n)
 		{

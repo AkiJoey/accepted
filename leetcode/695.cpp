@@ -2,7 +2,7 @@
 class Solution
 {
 	public:
-		int direction[4][2] = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+		int direction[4][2] = {{ 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 }};
 		int dfs(vector<vector<int>>& grid, int i, int j)
 		{
 			if (i < 0 || j < 0 || i >= grid.size() || j >= grid[i].size() || !grid[i][j])
