@@ -2,7 +2,7 @@
 class Solution
 {
 	public:
-		int res;
+		int res = 0;
 		void dfs(int index, int col, int hill, int dale, int n)
 		{
 			if (index == n)
